@@ -1,0 +1,27 @@
+.btn {
+    width: 100%;
+    background: none;
+    border: 3px solid black;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    padding: .5rem;
+    font-weight: bold;
+    aspect-ratio: 1 / 1;
+    cursor: pointer;
+    color: black;
+}
+
+.btn.active {  
+    background-color: rgb(13, 255, 0);
+    border: 3px solid rgb(37, 212, 27);
+}
+
+.btn.inactive {
+    opacity: .3;
+}
+
+/* down here the logic is simple, when the btn is NOT disabled, show this css */
+.btn:hover:not(:disabled),
+.btn:focus:not(:disabled) {
+    background-color: hsl(200,100%, 75%);
+}
